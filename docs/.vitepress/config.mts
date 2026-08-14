@@ -31,6 +31,8 @@ const deepDive = {
     { text: '测试体系与 Typert 产物', link: '/deep-dive/testing-typert' },
     { text: '13 · 技能系统深入', link: '/deep-dive/skills-deep' },
     { text: '16 · 重试/凭据/LLM 补遗', link: '/deep-dive/llm-supplement' },
+    { text: '14 · 前端渲染内核', link: '/deep-dive/web-render-kernel' },
+    { text: '15 · 调度/命令/会话引用', link: '/deep-dive/schedule-commands' },
   ],
 }
 
