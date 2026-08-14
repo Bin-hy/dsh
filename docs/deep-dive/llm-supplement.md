@@ -114,3 +114,7 @@ prepend = 在所有业务监听器之前。语法错误要在**任何消费方�
 :::
 
 下一篇：前端渲染内核 / 调度命令（笔记已就绪）。
+
+::: tip 相关考古
+call-config 的 FIXME 未决点与不变量同步限制见[考古⑥](/deep-dive/archaeology-6)与[考古⑪](/deep-dive/archaeology-11)。
+:::

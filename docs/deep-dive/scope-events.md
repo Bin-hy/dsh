@@ -167,3 +167,7 @@ async whenIdle(): Promise<void> {
 :::
 
 下一篇预告：A13~A19 剩余聚类（技能深入 / 前端渲染内核 / 调度命令 / 重试凭据 / 编排已结 / 启动组合沙箱补遗 / 测试与 Typert）。
+
+::: tip 相关考古
+本篇事件内核的后续审计见[考古①](/deep-dive/archaeology-1)——其中发现并运行时复现了 `DisposableList` 无 `unshift` 的潜伏崩溃路径。
+:::

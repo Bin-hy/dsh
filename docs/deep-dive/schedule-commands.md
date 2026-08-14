@@ -77,3 +77,7 @@ steer 是"插入当前步骤边界"——提醒不该打断正在执行的工具
 :::
 
 至此 backlog 12 个主聚类全部消化完毕（仅剩 20 条第二轮存疑项）。下一轮计划：验证 A11-2 的潜在 bug 线索（DisposableList 无 unshift），或按第二轮存疑继续。
+
+::: tip 相关考古
+调度器的墙钟-only 语义与 commands 装配点见[考古⑬](/deep-dive/archaeology-13)。
+:::

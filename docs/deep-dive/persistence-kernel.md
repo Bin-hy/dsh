@@ -133,3 +133,7 @@ step 仍开 → step/end
 :::
 
 下一篇：进程外子代理与 ACP / 作用域与事件内核（研究中）。
+
+::: tip 相关考古
+持久化的后续审计见[考古⑥](/deep-dive/archaeology-6)（投影缓存的"顺序即仲裁"）与[考古③](/deep-dive/archaeology-3)（write-behind pending 无内存上界的真实缺口）。
+:::

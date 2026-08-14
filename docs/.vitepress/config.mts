@@ -46,6 +46,7 @@ const deepDive = {
     { text: '考古⑪ · 复制即冻结与命名统一', link: '/deep-dive/archaeology-11' },
     { text: '考古⑫ · 最终处置与文档建议', link: '/deep-dive/archaeology-12' },
     { text: '考古⑬ · 收官：52/52 全部消化', link: '/deep-dive/archaeology-13' },
+    { text: '参考 · 会话事件词表 45 项', link: '/deep-dive/event-vocabulary' },
   ],
 }
 

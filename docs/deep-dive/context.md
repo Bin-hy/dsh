@@ -201,3 +201,7 @@ append 进尾部；replace 把一段位置跨度换成新节点并 `replaceGener
 :::
 
 下一篇：[05 · 多代理编排](/deep-dive/orchestration)——subagent 提供方、受限 JS workflow、后台 jobs、持久 goal 循环。
+
+::: tip 相关考古
+压缩与目录的交互审计见[考古⑤](/deep-dive/archaeology-5)与[考古⑨](/deep-dive/archaeology-9)。
+:::

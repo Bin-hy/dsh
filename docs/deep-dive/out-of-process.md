@@ -116,3 +116,7 @@ spawn 子进程 → race(initialize+newSession, spawnFailed, cancelSettled) → 
 :::
 
 下一篇：作用域与事件内核（研究中）。
+
+::: tip 相关考古
+进程外传输的三个"刻意省略"见[考古⑧](/deep-dive/archaeology-8)。
+:::
