@@ -23,6 +23,7 @@ const deepDive = {
     { text: '08 · 持久化与工程化', link: '/deep-dive/engineering' },
     { text: '编排补遗 · fork/goal/workflow 细节', link: '/deep-dive/orchestration-supplement' },
     { text: '压缩与计量补遗 · 重入/口径/插值', link: '/deep-dive/compaction-meter-supplement' },
+    { text: '12 · 终端与 PTY', link: '/deep-dive/terminal-pty' },
   ],
 }
 
