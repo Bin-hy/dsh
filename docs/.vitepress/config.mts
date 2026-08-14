@@ -29,6 +29,7 @@ const deepDive = {
     { text: '11 · 作用域与事件内核', link: '/deep-dive/scope-events' },
     { text: '启动与沙箱补遗 · 身份/patch/ACL', link: '/deep-dive/boot-sandbox-supplement' },
     { text: '测试体系与 Typert 产物', link: '/deep-dive/testing-typert' },
+    { text: '13 · 技能系统深入', link: '/deep-dive/skills-deep' },
   ],
 }
 

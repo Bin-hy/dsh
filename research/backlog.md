@@ -54,7 +54,7 @@
 - `tool-ask-user` 与 `user-questions` 的交互细节（04#7）
 - `session-reference`（recall form）的投影/预算算法（`retainReferencedSession`、`DEFAULT_MAX_REFERENCE_BYTES`）（03#5）
 
-## A16 · 重试、凭据与 LLM 补遗 ⬜
+## A16 · 重试、凭据与 LLM 补遗 ✅（已消化 → research/14-retry-credentials.md）
 
 - `llm-retry` 插件本体：与适配器级重试的分工边界、重试是否产生新 chunk（01#4）
 - `tests/retry.spec.ts`：同 step 内非重试失败后新请求失败的语义、policyKey 代际（05#6）
