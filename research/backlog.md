@@ -123,7 +123,7 @@
 > A10 消化时新发现的 9 条（源自 `research/08-outofproc.md` §7）：
 
 - ⬜ A10-1 ACP `max_turn_requests` 与 `max-tokens` 的归一关系是否完整
-- ⬜ A10-2 不对称映射：codex `interrupted → error` vs ACP `cancelled → aborted`——是否有意
+- ✅ A10-2 已归档（→ 考古②） `interrupted → error` vs ACP `cancelled → aborted`——是否有意
 - ⬜ A10-3 SDK 无线上取消：超时/dispose 只本地结算，服务器侧轮次继续跑的语义
 - ⬜ A10-4 ACP 客户端 initialize 声明的 clientCapabilities 为空对象的影响面
 - ⬜ A10-5 codex turn/completed 早到通知的 commitTurnId 放行窗口
@@ -167,7 +167,7 @@
 - ⬜ A16-6 `BlockAssembler.message()` 默认 source 与 loop 用法需在文档区分
 - ⬜ A16-7 进程层热轮换的边界：快照不可变 → "无可轮换"而非"轮换无通知"
 - ⬜ A16-8 `llm/adapters-updated` 与 `notifyUpdated` 的"对称 > 复用"文化案例（公共助手被刻意否决）
-- ⬜ A16-9 `STREAM_CLOSED`（干净部分 EOF）不在默认可重试 codes 内——有意策略但文档未说明
+- ✅ A16-9 已实证（→ 考古②）不在默认可重试 codes 内——有意策略但文档未说明
 
 > A15 消化时新发现的 10 条（源自 `research/13-schedule-commands.md` §7）：
 
@@ -177,7 +177,7 @@
 - ⬜ A15-4 时钟回拨/系统休眠无专门补偿逻辑（靠 latest-due 语义兜底，文档未明言）
 - ⬜ A15-5 `recordInput:false` 命令的审计缺口是否被接受未在包文档展开
 - ⬜ A15-6 goal/change 的远程面（host goal 面板）消费方未在范围
-- ⬜ A15-7 every 批量共享 acceptedAt 的竞态（理论不可达，但 faulted 严重性值得留意）
+- ✅ A15-7 已归档（→ 考古②） 的竞态（理论不可达，但 faulted 严重性值得留意）
 - ✅ A15-8 已归档（→ 考古①）——崩溃即丢选择（与"日志即真相"的张力注释已承认）
 - ⬜ A15-9 ask() 无内置超时：UI 卡死且无人取消则模型回合无限挂起
 - ⬜ A15-10 事件命名无统一前缀约定（schedule/change vs goal/change vs command/run）
