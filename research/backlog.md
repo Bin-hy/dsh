@@ -112,7 +112,7 @@
 
 > A09 消化时新发现的 7 条（源自 `research/07-persistence.md` §7），暂归 A09 附属，后续可并入新聚类：
 
-- ⬜ A09-1 积压（pending）无内存上界：高频事件流下 write-behind 的 pending 数组可无限增长
+- ✅ A09-1 确认为真实缺口（→ 考古③）：高频事件流下 write-behind 的 pending 数组可无限增长
 - ⬜ A09-2 串行化链尾清理：按 id 的 promise 链在会话退役后是否及时释放
 - ⬜ A09-3 JSONL 全量解析放大：无 `loadStoredFrom` 的后端冷读必须解析全量再切片
 - ⬜ A09-4 索引搜索时对账滞后：搜索进行中发生写入的对账窗口
@@ -124,7 +124,7 @@
 
 - ⬜ A10-1 ACP `max_turn_requests` 与 `max-tokens` 的归一关系是否完整
 - ✅ A10-2 已归档（→ 考古②） `interrupted → error` vs ACP `cancelled → aborted`——是否有意
-- ⬜ A10-3 SDK 无线上取消：超时/dispose 只本地结算，服务器侧轮次继续跑的语义
+- ✅ A10-3 已归档（→ 考古③）：超时/dispose 只本地结算，服务器侧轮次继续跑的语义
 - ⬜ A10-4 ACP 客户端 initialize 声明的 clientCapabilities 为空对象的影响面
 - ⬜ A10-5 codex turn/completed 早到通知的 commitTurnId 放行窗口
 - ⬜ A10-6 claude-code SDK 流消费中 `settingSources` 故意省略的宿主设置语义
@@ -179,5 +179,5 @@
 - ⬜ A15-6 goal/change 的远程面（host goal 面板）消费方未在范围
 - ✅ A15-7 已归档（→ 考古②） 的竞态（理论不可达，但 faulted 严重性值得留意）
 - ✅ A15-8 已归档（→ 考古①）——崩溃即丢选择（与"日志即真相"的张力注释已承认）
-- ⬜ A15-9 ask() 无内置超时：UI 卡死且无人取消则模型回合无限挂起
+- ✅ A15-9 已审计（→ 考古③）：UI 卡死且无人取消则模型回合无限挂起
 - ⬜ A15-10 事件命名无统一前缀约定（schedule/change vs goal/change vs command/run）
