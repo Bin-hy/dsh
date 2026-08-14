@@ -80,7 +80,7 @@
 - `dsh-agent-tool-presentation` 的 presentAs/preset 组合路径（02#5）
 - `fs/write-intent` 单槽瀑布多监听器的先到先得冲突行为（02#6）
 
-## A19 · 测试体系与 Typert 产物 ⬜
+## A19 · 测试体系与 Typert 产物 ✅（已消化 → deep-dive/testing-typert）
 
 - `apps/web` 三层 GUI 测试体系与 `produced-files.overlay.yml` overlay 机制（06#8）
 - `typert.generator` 的 `emitter.ts`/`renderer.ts` 产物形状（06#6）
