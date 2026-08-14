@@ -45,6 +45,7 @@ const deepDive = {
     { text: '考古⑩ · 所有权澄清与 rev 绕过', link: '/deep-dive/archaeology-10' },
     { text: '考古⑪ · 复制即冻结与命名统一', link: '/deep-dive/archaeology-11' },
     { text: '考古⑫ · 最终处置与文档建议', link: '/deep-dive/archaeology-12' },
+    { text: '考古⑬ · 收官：52/52 全部消化', link: '/deep-dive/archaeology-13' },
   ],
 }
 
