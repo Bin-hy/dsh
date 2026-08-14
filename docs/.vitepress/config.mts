@@ -34,6 +34,7 @@ const deepDive = {
     { text: '14 · 前端渲染内核', link: '/deep-dive/web-render-kernel' },
     { text: '15 · 调度/命令/会话引用', link: '/deep-dive/schedule-commands' },
     { text: '考古① · 潜伏崩溃路径与文档滞后', link: '/deep-dive/archaeology-1' },
+    { text: '考古② · fault 级错误与未文档化选择', link: '/deep-dive/archaeology-2' },
   ],
 }
 
