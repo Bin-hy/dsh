@@ -1,6 +1,6 @@
 # Compaction 与计量补遗：重入、持久化失败与三个插值分支
 
-> 消化 backlog A20 的全部五项存疑：摘要调用的重入语义、flush 失败的锁定状态、`/compact` 与 goal 轮次的交互、计量口径的不对称、`{{` 插值的三个分支。全部基于源码逐行实证。
+> 消化 backlog A20 的全部五项存疑：摘要调用的重入语义、flush 失败的锁定状态、`/compact` 与 goal 轮次的交互、计量口径的不对称、双花括号插值的三个分支。全部基于源码逐行实证。
 
 ## 1. 摘要调用：瀑布内的"旁路请求"
 
@@ -78,9 +78,9 @@ if (flushFailure !== undefined) {
 
 计量服务与投影单元必须**同价**——否则 UI 显示的数字与压缩判断的数字对不上，debug 时就是灵异事件。
 
-## 5. `{{` 插值的三个分支
+## 5. 双花括号插值的三个分支
 
-`packages/core/system-prompt/src/index.ts:258-295` 的 `interpolate` 对 `{{` 开头的文本有三条路径：
+`packages/core/system-prompt/src/index.ts:258-295` 的 `interpolate` 对双花括号开头的文本有三条路径：
 
 ```text
 ① {{name}} 完整组：
@@ -99,6 +99,6 @@ if (flushFailure !== undefined) {
 - ✅ A20#6 flush 失败时锁已正常关闭（persistence 错误独立于协议锁）
 - ✅ A20#9 /compact 与 goal 轮次（maintenance 闩锁 + 排空接力）
 - ✅ A20#2 estimateHeader 口径（system=消息价、tools=块价，刻意不对称）
-- ✅ A20#12 `{{` 插值三分支（malformed / unknown / 字面散文）
+- ✅ A20#12 双花括号插值三分支（malformed / unknown / 字面散文）
 
 A20 全部消化完毕。下一篇预告：会话持久化内核 / 进程外子代理与 ACP / 作用域与事件内核 / 终端与 PTY（子代理研究中）。

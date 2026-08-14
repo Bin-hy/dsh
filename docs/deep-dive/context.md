@@ -32,11 +32,11 @@
 | **section** | 静态/函数式提示词段落 | `order` 升序：-100 harness 身份、0 persona、100-199 工具指南 |
 | **context** | 动态上下文（sandbox 策略、approval 策略等） | 渲染为空则不贡献 |
 | **tools** | 工具 schema 列表 | `toolOrder` 配置或字典序 |
-| **variable** | `{{name}}` 插值变量（provider/model/cwd） | 全局先填，最近 scope 覆盖 |
+| **variable** | <code v-pre>{{name}}</code> 插值变量（provider/model/cwd） | 全局先填，最近 scope 覆盖 |
 
 组装流程（9 步）：取 scope 链 → 抑制检查 → 变量解析 → sections/contexts 合并（scoped 同名遮蔽 global）→ 工具 schema 收集（`structuredClone` 脱离）→ order 排序（`complete: true` 的段成为唯一段）→ `toolOrder` 排序 → **`system-prompt/assemble` waterfall**（监听器可改写 assembly，返回值权威）→ complete 段恢复。
 
-渲染细节：严格 `{{name}}` 语法，变量名匹配 `^[a-z][a-z0-9_]*$`，**未知引用直接抛错**（fail loud，不静默留空）。
+渲染细节：严格 <code v-pre>{{name}}</code> 语法，变量名匹配 `^[a-z][a-z0-9_]*$`，**未知引用直接抛错**（fail loud，不静默留空）。
 
 ::: tip 面试要点：为什么工具 schema 是"每次请求重新投影"而不是启动时快照？
 因为 scope 化注册表是动态的（restriction、preset 变化、subagent 派生）。`wireSchemas(context.scope)` 在每次 assembly 时求值当前 scope 可见工具——schema 变化立即反映到下一次请求，无需重启。
