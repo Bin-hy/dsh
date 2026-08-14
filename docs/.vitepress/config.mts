@@ -43,6 +43,7 @@ const deepDive = {
     { text: '考古⑧ · 三个刻意省略', link: '/deep-dive/archaeology-8' },
     { text: '考古⑨ · 完整清单与严格校验', link: '/deep-dive/archaeology-9' },
     { text: '考古⑩ · 所有权澄清与 rev 绕过', link: '/deep-dive/archaeology-10' },
+    { text: '考古⑪ · 复制即冻结与命名统一', link: '/deep-dive/archaeology-11' },
   ],
 }
 
