@@ -24,6 +24,7 @@ const deepDive = {
     { text: '编排补遗 · fork/goal/workflow 细节', link: '/deep-dive/orchestration-supplement' },
     { text: '压缩与计量补遗 · 重入/口径/插值', link: '/deep-dive/compaction-meter-supplement' },
     { text: '12 · 终端与 PTY', link: '/deep-dive/terminal-pty' },
+    { text: '09 · 会话持久化内核', link: '/deep-dive/persistence-kernel' },
   ],
 }
 
