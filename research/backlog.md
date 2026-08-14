@@ -38,7 +38,7 @@
 - 技能目录与 compaction 的精确交互时序（目录被遮蔽后重建）（03#11）
 - `agent-instructions` 的 `workspaceContextMessage` 渲染格式（state.ts）（03#7）
 
-## A14 · 前端渲染内核 ⬜
+## A14 · 前端渲染内核 ✅（已消化 → deep-dive/web-render-kernel）
 
 - API Proxy 内部：`api-proxy.ts`、`src/fetch/`、Host 侧帧发射点（06#2）
 - `session/subscribed.lastSeq` 与 history 尾页 `projections` 块的 Host 发射顺序（06#9）
@@ -47,7 +47,7 @@
 - vendored Cordis Loader 的 `tree.import`/`internal` 契约细节（06#5）
 - Electron 路径（`file://` + IPC 桥）是否存在于仓库（06#7）
 
-## A15 · 调度、命令与会话引用 ⬜
+## A15 · 调度、命令与会话引用 ✅（已消化 → deep-dive/schedule-commands）
 
 - `schedule/` 的 `domain.ts` 严格解码（decodeScheduleChange/foldScheduleEvents/resolveEveryOccurrence）（04#4）
 - `command-goal`（/goal 命令）与 `commands` 包本体（04#7）
