@@ -73,8 +73,9 @@ footer: MIT Licensed · 基于 deepseek-harness 0.1.0-rc.5 源码
 ✅ 10 进程外子代理与 ACP（四种跨进程传输）
 ✅ 11 作用域与事件内核（vendored Cordis waterfall 逐行拆解）
 ✅ 12 终端与 PTY（node-pty / 提示符检测 / 持久会话）
-✅ 编排补遗 · 压缩与计量补遗
-⬜ 13~19 见 backlog（技能深入 / 前端渲染内核 / 调度命令 / 重试凭据 / 启动组合沙箱 / 测试与 Typert）
+✅ 编排补遗 · 压缩与计量补遗 · 启动与沙箱补遗 · 测试与 Typert
+🔬 13 技能深入 / 14 前端渲染内核 / 15 调度命令 / 16 重试凭据（研究中）
+⬜ 其余见 backlog（含 20 条第二轮存疑项）
 ```
 
 完整路线图见 [research/backlog.md](https://github.com/Bin-hy/dsh/blob/main/research/backlog.md)（56 条存疑项 → 12 个文章聚类）。
