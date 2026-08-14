@@ -3,3 +3,6 @@
 /docs/.vitepress/dist
 .DS_Store
 *.log
+
+# agent 工具缓存（Reasonix）
+.reasonix/
