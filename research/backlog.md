@@ -125,9 +125,9 @@
 - ⬜ A10-1 ACP `max_turn_requests` 与 `max-tokens` 的归一关系是否完整
 - ✅ A10-2 已归档（→ 考古②） `interrupted → error` vs ACP `cancelled → aborted`——是否有意
 - ✅ A10-3 已归档（→ 考古③）：超时/dispose 只本地结算，服务器侧轮次继续跑的语义
-- ⬜ A10-4 ACP 客户端 initialize 声明的 clientCapabilities 为空对象的影响面
-- ⬜ A10-5 codex turn/completed 早到通知的 commitTurnId 放行窗口
-- ⬜ A10-6 claude-code SDK 流消费中 `settingSources` 故意省略的宿主设置语义
+- ✅ A10-4 已归档（→ 考古⑧） 为空对象的影响面
+- ✅ A10-5 证伪（→ 考古⑧） 放行窗口
+- ✅ A10-6 已归档（→ 考古⑧） 故意省略的宿主设置语义
 - ⬜ A10-7 dsh-sdk 子进程的持久化/cordis.yml 与父进程的隔离边界
 - ⬜ A10-8 subprocess seam 的"SDK 托管传输"例外是否还有第二个使用者
 - ⬜ A10-9 四传输 dispose 宽限默认值的配置来源与调优依据
@@ -149,7 +149,7 @@
 > A13 消化时新发现的 8 条（源自 `research/11-skills.md` §7）：
 
 - ✅ A13-1 部分证伪（→ 考古⑦）命中的具体触发场景未经集成测试验证
-- ⬜ A13-2 `workspaceContextMessage` 的 plugin source 保留动机未在注释说明
+- ✅ A13-2 已归档（→ 考古⑧） 保留动机未在注释说明
 - ✅ A13-3 已归档（→ 考古⑦）：标记编辑后重算项目根的 scope 键重解释边界
 - ✅ A13-4 已归档（→ 考古⑤） 的产品原因未见文档
 - ⬜ A13-5 pre-step 完整参与者清单（18 个注册文件）跨 bundle 顺序未逐一枚举
