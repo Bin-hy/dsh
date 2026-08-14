@@ -35,6 +35,7 @@ const deepDive = {
     { text: '15 · 调度/命令/会话引用', link: '/deep-dive/schedule-commands' },
     { text: '考古① · 潜伏崩溃路径与文档滞后', link: '/deep-dive/archaeology-1' },
     { text: '考古② · fault 级错误与未文档化选择', link: '/deep-dive/archaeology-2' },
+    { text: '考古③ · 三个"没有上界"的审计', link: '/deep-dive/archaeology-3' },
   ],
 }
 
