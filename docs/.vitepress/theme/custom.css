@@ -1,0 +1,53 @@
+/* DSH 学习资料主题微调 */
+:root {
+  --vp-c-brand-1: #4d6bfe;
+  --vp-c-brand-2: #6a84ff;
+  --vp-c-brand-3: #3b56d4;
+  --vp-c-brand-soft: rgba(77, 107, 254, 0.14);
+
+  --vp-font-family-base: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --vp-font-family-mono: 'JetBrains Mono', 'SF Mono', Menlo, Monaco, Consolas,
+    'Liberation Mono', monospace;
+}
+
+/* 代码块更舒适 */
+.vp-doc div[class*='language-'] {
+  border-radius: 10px;
+}
+
+.vp-doc :not(pre) > code {
+  border-radius: 4px;
+  padding: 0.15em 0.35em;
+}
+
+/* 自定义容器：面试要点 */
+.vp-doc .custom-block.interview {
+  border-left: 4px solid var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+  padding: 12px 16px;
+  border-radius: 0 8px 8px 0;
+  margin: 16px 0;
+}
+
+.vp-doc .custom-block.interview .custom-block-title {
+  color: var(--vp-c-brand-1);
+  font-weight: 600;
+}
+
+/* 表格在窄屏可读 */
+.vp-doc table {
+  font-size: 0.92em;
+}
+
+/* mermaid 图居中留白 */
+.vp-doc .mermaid {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+/* 首页 feature 图标 */
+.VPFeature .icon {
+  font-size: 1.4em;
+}
