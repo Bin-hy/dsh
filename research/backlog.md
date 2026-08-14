@@ -145,3 +145,14 @@
 - ⬜ A14-2 `session.seq` 的分配点（客户端 Session 的序列号在哪里推进）
 - ⬜ A14-3 conversation 折叠引擎与 Host 日志的精确边界（浏览器端 ConversationNodeAssembler 的完整状态机）
 - ⬜ A14-4 HMR rev 流程（rev 哈希如何随 bundle 变化与失效缓存）
+
+> A13 消化时新发现的 8 条（源自 `research/11-skills.md` §7）：
+
+- ⬜ A13-1 `existing`（批次内目录）命中的具体触发场景未经集成测试验证
+- ⬜ A13-2 `workspaceContextMessage` 的 plugin source 保留动机未在注释说明
+- ⬜ A13-3 `TODO(frozen-project-root)`：标记编辑后重算项目根的 scope 键重解释边界
+- ⬜ A13-4 skill-badge 在 base bundle 默认 disabled 的产品原因未见文档
+- ⬜ A13-5 pre-step 完整参与者清单（18 个注册文件）跨 bundle 顺序未逐一枚举
+- ⬜ A13-6 time-context `{prepend:true}` 与工作区折叠的最终顺序是推理，未跑组合测试
+- ⬜ A13-7 目录 `entries` 宽容跳过与"模型可见 ⟺ 已记录"的张力仅在注释层面解释
+- ⬜ A13-8 压缩区间同时包住目录与剪枝节点的组合未单独测试
