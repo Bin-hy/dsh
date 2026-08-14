@@ -119,3 +119,15 @@
 - ⬜ A09-5 缓存回写无版本仲裁：投影缓存 putSoft 与并发恢复的竞态
 - ⬜ A09-6 reserve 相位机覆盖：preparations.ts 状态机的全部转换是否被测试覆盖
 - ⬜ A09-7 跨进程并发写未防御：两进程同时写同一 JSONL 会话的行为
+
+> A10 消化时新发现的 9 条（源自 `research/08-outofproc.md` §7）：
+
+- ⬜ A10-1 ACP `max_turn_requests` 与 `max-tokens` 的归一关系是否完整
+- ⬜ A10-2 不对称映射：codex `interrupted → error` vs ACP `cancelled → aborted`——是否有意
+- ⬜ A10-3 SDK 无线上取消：超时/dispose 只本地结算，服务器侧轮次继续跑的语义
+- ⬜ A10-4 ACP 客户端 initialize 声明的 clientCapabilities 为空对象的影响面
+- ⬜ A10-5 codex turn/completed 早到通知的 commitTurnId 放行窗口
+- ⬜ A10-6 claude-code SDK 流消费中 `settingSources` 故意省略的宿主设置语义
+- ⬜ A10-7 dsh-sdk 子进程的持久化/cordis.yml 与父进程的隔离边界
+- ⬜ A10-8 subprocess seam 的"SDK 托管传输"例外是否还有第二个使用者
+- ⬜ A10-9 四传输 dispose 宽限默认值的配置来源与调优依据
