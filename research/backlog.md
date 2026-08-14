@@ -131,3 +131,10 @@
 - ⬜ A10-7 dsh-sdk 子进程的持久化/cordis.yml 与父进程的隔离边界
 - ⬜ A10-8 subprocess seam 的"SDK 托管传输"例外是否还有第二个使用者
 - ⬜ A10-9 四传输 dispose 宽限默认值的配置来源与调优依据
+
+> A11 消化时新发现的 4 条（源自 `research/09-scope-events.md` §7）：
+
+- ⬜ A11-1 `internal/listener` 类型声明落后：声明 `prepend: boolean`，实际分发传 `EventOptions` 对象（events.ts:349 vs :296）
+- ⬜ A11-2 潜在崩溃路径：`DisposableList` 无 `unshift`——非 global 的 `ctx.on('internal/update', fn, {prepend:true})` 会走 fiber._hooks 的 unshift 而崩溃（utils.ts:5-40）
+- ⬜ A11-3 `fiber._hooks` 在 `_unload` 从不清理：Group 的 update 监听器跨重载存活（推断刻意，未实证）
+- ⬜ A11-4 `whenIdle` 收敛为推演证明，未见穷举并发测试
