@@ -77,7 +77,8 @@ footer: MIT Licensed · 基于 deepseek-harness 0.1.0-rc.5 源码
 ✅ 13 技能深入  ✅ 14 前端渲染内核  ✅ 15 调度命令  ✅ 16 重试凭据
 ✅ 启动与沙箱补遗 · 测试与 Typert
 —— 12 个主聚类全部消化（共 26 篇）——
-⬜ 第二轮存疑 20 条（A09/A10/A11 消化中新发现，见 backlog）
+🔬 源码考古系列进行中（①~⑤，已消化 17 条第二轮存疑，含 1 个运行时复现的 bug）
+⬜ 剩余 36 条第二轮存疑（见 backlog）；上游 issue 素材包见 research/issues/
 ```
 
 完整路线图见 [research/backlog.md](https://github.com/Bin-hy/dsh/blob/main/research/backlog.md)（56 条存疑项 → 12 个文章聚类）。
