@@ -22,6 +22,7 @@ const deepDive = {
     { text: '07 · Web GUI 与 API 层', link: '/deep-dive/web' },
     { text: '08 · 持久化与工程化', link: '/deep-dive/engineering' },
     { text: '编排补遗 · fork/goal/workflow 细节', link: '/deep-dive/orchestration-supplement' },
+    { text: '压缩与计量补遗 · 重入/口径/插值', link: '/deep-dive/compaction-meter-supplement' },
   ],
 }
 
