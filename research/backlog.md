@@ -71,7 +71,7 @@
 - subagent lifecycle.ts 与 workflow emitWorkflowEvent 的监听器隔离差异（04#6）
 - `agent/inbox/spliced` 跨压缩/跨持久化的行为验证（04#8）
 
-## A18 · 启动、组合与沙箱补遗 ⬜
+## A18 · 启动、组合与沙箱补遗 ✅（已消化 → deep-dive/boot-sandbox-supplement）
 
 - launcher 身份注入点：谁实际 `ctx.provide(CONFIGURED_AGENT_IDENTITIES_KEY)`（01#5）
 - `watchUserPatches` 与 `composeLive` 的 HMR 热重载、structuredClone 别名陷阱（01#6）
