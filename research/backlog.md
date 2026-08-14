@@ -113,7 +113,7 @@
 > A09 消化时新发现的 7 条（源自 `research/07-persistence.md` §7），暂归 A09 附属，后续可并入新聚类：
 
 - ✅ A09-1 确认为真实缺口（→ 考古③）：高频事件流下 write-behind 的 pending 数组可无限增长
-- ⬜ A09-2 串行化链尾清理：按 id 的 promise 链在会话退役后是否及时释放
+- ✅ A09-2 证伪（→ 考古⑤）：按 id 的 promise 链在会话退役后是否及时释放
 - ✅ A09-3 已归档（→ 考古④）：无 `loadStoredFrom` 的后端冷读必须解析全量再切片
 - ⬜ A09-4 索引搜索时对账滞后：搜索进行中发生写入的对账窗口
 - ⬜ A09-5 缓存回写无版本仲裁：投影缓存 putSoft 与并发恢复的竞态
@@ -151,7 +151,7 @@
 - ⬜ A13-1 `existing`（批次内目录）命中的具体触发场景未经集成测试验证
 - ⬜ A13-2 `workspaceContextMessage` 的 plugin source 保留动机未在注释说明
 - ⬜ A13-3 `TODO(frozen-project-root)`：标记编辑后重算项目根的 scope 键重解释边界
-- ⬜ A13-4 skill-badge 在 base bundle 默认 disabled 的产品原因未见文档
+- ✅ A13-4 已归档（→ 考古⑤） 的产品原因未见文档
 - ⬜ A13-5 pre-step 完整参与者清单（18 个注册文件）跨 bundle 顺序未逐一枚举
 - ⬜ A13-6 time-context `{prepend:true}` 与工作区折叠的最终顺序是推理，未跑组合测试
 - ⬜ A13-7 目录 `entries` 宽容跳过与"模型可见 ⟺ 已记录"的张力仅在注释层面解释
@@ -162,7 +162,7 @@
 - ⬜ A16-1 docs `llmRetryPolicyOf(stream)` 符号已不存在（文档滞后，以代码为准）
 - ⬜ A16-2 `FIXME(call-config-shape)` 两个未决点：epoch 字段清单、provider 特有选项归属
 - ✅ A16-3 已实证（→ 考古①）：README "opens a retry turn" vs 实测同一 (turn, step)（retry.spec.ts:216 断言仅 1 条 step/start）
-- ⬜ A16-4 always 模式的下游组合未定义注册顺序行为（README:52 承认；retry.spec.ts:799 展示排水）
+- ✅ A16-4 已归档（→ 考古⑤）未定义注册顺序行为（README:52 承认；retry.spec.ts:799 展示排水）
 - ⬜ A16-5 invariant 的 async 限制：挂在这类事件上的检查必须同步，异步失败只能被包含
 - ⬜ A16-6 `BlockAssembler.message()` 默认 source 与 loop 用法需在文档区分
 - ⬜ A16-7 进程层热轮换的边界：快照不可变 → "无可轮换"而非"轮换无通知"
@@ -171,7 +171,7 @@
 
 > A15 消化时新发现的 10 条（源自 `research/13-schedule-commands.md` §7）：
 
-- ⬜ A15-1 session-reference 的生产消费方不在本 checkout（host/web GUI 侧）
+- ✅ A15-1 已归档（→ 考古⑤）不在本 checkout（host/web GUI 侧）
 - ⬜ A15-2 commands 服务的组件装配点与 TypertRemoteService 挂载未深挖
 - ⬜ A15-3 schedule runtime 只挂 root；owned child 含 schedule/change 事件时无显式拒绝路径
 - ⬜ A15-4 时钟回拨/系统休眠无专门补偿逻辑（靠 latest-due 语义兜底，文档未明言）
