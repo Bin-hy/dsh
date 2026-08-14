@@ -21,6 +21,7 @@ const deepDive = {
     { text: '06 · LLM 层与流式管道', link: '/deep-dive/llm' },
     { text: '07 · Web GUI 与 API 层', link: '/deep-dive/web' },
     { text: '08 · 持久化与工程化', link: '/deep-dive/engineering' },
+    { text: '编排补遗 · fork/goal/workflow 细节', link: '/deep-dive/orchestration-supplement' },
   ],
 }
 
