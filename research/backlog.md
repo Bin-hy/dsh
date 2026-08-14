@@ -4,7 +4,7 @@
 > 每个聚类映射一篇计划中的新文章（编号沿用博客深度拆解序列）。
 > 状态：`⬜ 未开始` / `🔬 研究中` / `✅ 已消化`。消化后请在对应笔记第 7 节更新状态。
 
-## A09 · 会话持久化内核 ⬜
+## A09 · 会话持久化内核 ✅（已消化 → deep-dive/persistence-kernel）
 
 - 持久化完整写路径：`write-behind.ts` 有界批量窗口之外还有哪些持久化点（dispose drain？）（01#3）
 - `session-persistence-jsonl/format.ts` 的 `packChunkRuns` chunk 打包行编码细节（01#3）
@@ -12,13 +12,13 @@
 - 崩溃修复的 `interruptedTurnClosers`（repair.ts）（01#3）
 - `session-projection-cache` 的消费语义：缓存行 + 持久化尾部回放、水位检查点（01#10）
 
-## A10 · 进程外子代理与 ACP ⬜
+## A10 · 进程外子代理与 ACP ✅（已消化 → deep-dive/out-of-process）
 
 - `subagent-acp` / `subagent-codex` / `subagent-claude-code` / `subagent-dsh-sdk` 四个进程外 Provider 未逐行展开（04#3）
 - 进程外传输的 run id 语义（`localAgent: undefined`）未经运行验证（04#3）
 - ACP 服务器（packages/acp）与 approval 桥接的完整细节
 
-## A11 · 作用域与事件内核 ⬜
+## A11 · 作用域与事件内核 ✅（已消化 → deep-dive/scope-events）
 
 - vendored Cordis `waterfall` 实现：`args.pop()` innermost next、dispatch thisArg 移位（01#1）
 - scope carrier 的 `[Context.filter]` 与 waterfall 交互时序（01#1）
@@ -26,7 +26,7 @@
 - `whenIdle()` 的竞态面：活动退休前启动替代工作的窗口（01#2）
 - listener snapshot 先于 log push 解析、回调后于提交运行的确切时序（01#1）
 
-## A12 · 终端与 PTY ⬜
+## A12 · 终端与 PTY ✅（已消化 → deep-dive/terminal-pty）
 
 - `LocalPtySession` 的提示符检测、就绪推断、scrollback、持久会话所有权（02#8）
 - `node-pty` spawn 与 UTF-8 传输、前台进程组、TERM→KILL 停稳细节（02#8）
@@ -63,7 +63,7 @@
 - `BlockAssembler.message()` 默认 source 与 loop 用法的区别（05#4）
 - usage 分片"最多一次且必须在 finish 前"的 invariant 契约假设（05#9）
 
-## A17 · 编排补遗 ⬜
+## A17 · 编排补遗 ✅（已消化 → deep-dive/orchestration-supplement）
 
 - fork 可继续模式被刻意关闭（TODO fork-continuable-prefix-reuse + issue #2124）（04#1）
 - `goal-round-driver/prompt.ts` 与 `tool-goal/wrapup.ts` 的渲染措辞（04#2）
@@ -86,7 +86,7 @@
 - `typert.generator` 的 `emitter.ts`/`renderer.ts` 产物形状（06#6）
 - `tools/execute` 包装器全家桶：文档提及 retry/metrics 但仓库未定位（02#3）
 
-## A20 · compaction 与计量补遗 ⬜
+## A20 · compaction 与计量补遗 ✅（已消化 → deep-dive/compaction-meter-supplement）
 
 - compaction 在 pre-step 瀑布内嵌套 `ctx.llm.stream()` 的重入语义（是否绕过 deriveMessages 不变式）（01#8）
 - `compaction/end` flush 失败（persistence）路径的 error 字段持久化（03#6）
