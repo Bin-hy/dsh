@@ -156,3 +156,15 @@
 - ⬜ A13-6 time-context `{prepend:true}` 与工作区折叠的最终顺序是推理，未跑组合测试
 - ⬜ A13-7 目录 `entries` 宽容跳过与"模型可见 ⟺ 已记录"的张力仅在注释层面解释
 - ⬜ A13-8 压缩区间同时包住目录与剪枝节点的组合未单独测试
+
+> A16 消化时新发现的 9 条（源自 `research/14-retry-credentials.md` §7）：
+
+- ⬜ A16-1 docs `llmRetryPolicyOf(stream)` 符号已不存在（文档滞后，以代码为准）
+- ⬜ A16-2 `FIXME(call-config-shape)` 两个未决点：epoch 字段清单、provider 特有选项归属
+- ⬜ A16-3 文档措辞出入：README "opens a retry turn" vs 实测同一 (turn, step)（retry.spec.ts:216 断言仅 1 条 step/start）
+- ⬜ A16-4 always 模式的下游组合未定义注册顺序行为（README:52 承认；retry.spec.ts:799 展示排水）
+- ⬜ A16-5 invariant 的 async 限制：挂在这类事件上的检查必须同步，异步失败只能被包含
+- ⬜ A16-6 `BlockAssembler.message()` 默认 source 与 loop 用法需在文档区分
+- ⬜ A16-7 进程层热轮换的边界：快照不可变 → "无可轮换"而非"轮换无通知"
+- ⬜ A16-8 `llm/adapters-updated` 与 `notifyUpdated` 的"对称 > 复用"文化案例（公共助手被刻意否决）
+- ⬜ A16-9 `STREAM_CLOSED`（干净部分 EOF）不在默认可重试 codes 内——有意策略但文档未说明
