@@ -38,6 +38,7 @@ const deepDive = {
     { text: '考古③ · 三个"没有上界"的审计', link: '/deep-dive/archaeology-3' },
     { text: '考古④ · 类型滞后与单写者假设', link: '/deep-dive/archaeology-4' },
     { text: '考古⑤ · 证伪、文档化与边界', link: '/deep-dive/archaeology-5' },
+    { text: '考古⑥ · 顺序仲裁与有界滞后', link: '/deep-dive/archaeology-6' },
   ],
 }
 
