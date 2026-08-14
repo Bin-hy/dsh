@@ -43,7 +43,14 @@ export default defineConfig({
   lang: 'zh-CN',
   title: 'DSH 深度拆解',
   description: 'DeepSeek Harness 源码级学习资料：从插件框架到 agent 循环的完整逻辑',
-  head: [['meta', { name: 'theme-color', content: '#4d6bfe' }]],
+  base: '/dsh/',
+  head: [
+    ['meta', { name: 'theme-color', content: '#4d6bfe' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:title', content: 'DSH 深度拆解 · Deep Dive into DeepSeek Harness' }],
+    ['meta', { property: 'og:description', content: '源码级中文学习资料：15 篇拆解、12 个设计模式、28 道面试题' }],
+    ['meta', { property: 'og:image', content: 'https://bin-hy.github.io/dsh/banner.svg' }],
+  ],
   cleanUrls: true,
   lastUpdated: true,
   themeConfig: {

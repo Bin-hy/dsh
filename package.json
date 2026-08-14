@@ -1,9 +1,23 @@
 {
   "name": "dsh-deep-dive",
   "version": "1.0.0",
-  "description": "DeepSeek Harness 源码深度拆解学习资料",
+  "description": "DeepSeek Harness 源码级深度拆解：15 篇学习文章、12 个设计模式、28 道面试题",
   "type": "module",
   "private": true,
+  "license": "MIT",
+  "homepage": "https://bin-hy.github.io/dsh/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bin-hy/dsh.git"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "agent",
+    "agent-harness",
+    "llm",
+    "learning-notes",
+    "vitepress"
+  ],
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
