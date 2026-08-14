@@ -128,7 +128,7 @@
 - ✅ A10-4 已归档（→ 考古⑧） 为空对象的影响面
 - ✅ A10-5 证伪（→ 考古⑧） 放行窗口
 - ✅ A10-6 已归档（→ 考古⑧） 故意省略的宿主设置语义
-- ⬜ A10-7 dsh-sdk 子进程的持久化/cordis.yml 与父进程的隔离边界
+- ✅ A10-7 已归档（→ 考古⑬）dsh-sdk 子进程的持久化/cordis.yml 与父进程的隔离边界
 - ✅ A10-8 已归档（→ 考古⑫）是否还有第二个使用者
 - ✅ A10-9 已归档（→ 考古⑪）的配置来源与调优依据
 
@@ -137,13 +137,13 @@
 - ✅ A11-1 已审计（→ 考古④）：声明 `prepend: boolean`，实际分发传 `EventOptions` 对象（events.ts:349 vs :296）
 - ✅ A11-2 已运行时复现（→ 考古① + research/issues/issue-cordis-disposablelist-unshift.md）：`DisposableList` 无 `unshift`——非 global 的 `ctx.on('internal/update', fn, {prepend:true})` 会走 fiber._hooks 的 unshift 而崩溃（utils.ts:5-40）
 - ✅ A11-3 已确认（→ 考古⑫）：Group 的 update 监听器跨重载存活（推断刻意，未实证）
-- ⬜ A11-4 `whenIdle` 收敛为推演证明，未见穷举并发测试
+- ✅ A11-4 已归档（→ 考古⑬）`whenIdle` 收敛为推演证明，未见穷举并发测试
 
 > A14 消化时新发现的存疑项（源自 `research/12-web-render.md` §8，其中 4 条已具名）：
 
 - ✅ A14-1 已找回（→ 考古⑥）（slot 视图解析的边界语义）
 - ✅ A14-2 前提错误型证伪（→ 考古⑩）（客户端 Session 的序列号在哪里推进）
-- ⬜ A14-3 conversation 折叠引擎与 Host 日志的精确边界（浏览器端 ConversationNodeAssembler 的完整状态机）
+- ✅ A14-3 已收口（→ 考古⑬）conversation 折叠引擎与 Host 日志的精确边界
 - ✅ A14-4 已归档（→ 考古⑩）（rev 哈希如何随 bundle 变化与失效缓存）
 
 > A13 消化时新发现的 8 条（源自 `research/11-skills.md` §7）：
@@ -172,11 +172,11 @@
 > A15 消化时新发现的 10 条（源自 `research/13-schedule-commands.md` §7）：
 
 - ✅ A15-1 已归档（→ 考古⑤）不在本 checkout（host/web GUI 侧）
-- ⬜ A15-2 commands 服务的组件装配点与 TypertRemoteService 挂载未深挖
+- ✅ A15-2 已归档（→ 考古⑬）commands 服务的组件装配点
 - ✅ A15-3 已归档（→ 考古⑫）；owned child 含 schedule/change 事件时无显式拒绝路径
-- ⬜ A15-4 时钟回拨/系统休眠无专门补偿逻辑（靠 latest-due 语义兜底，文档未明言）
+- ✅ A15-4 已归档（→ 考古⑬）时钟回拨/系统休眠无专门补偿
 - ✅ A15-5 已归档（→ 考古⑫）是否被接受未在包文档展开
-- ⬜ A15-6 goal/change 的远程面（host goal 面板）消费方未在范围
+- ✅ A15-6 已归档（→ 考古⑬）goal/change 的远程面消费方
 - ✅ A15-7 已归档（→ 考古②） 的竞态（理论不可达，但 faulted 严重性值得留意）
 - ✅ A15-8 已归档（→ 考古①）——崩溃即丢选择（与"日志即真相"的张力注释已承认）
 - ✅ A15-9 已审计（→ 考古③）：UI 卡死且无人取消则模型回合无限挂起
