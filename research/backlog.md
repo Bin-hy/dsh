@@ -168,3 +168,16 @@
 - ⬜ A16-7 进程层热轮换的边界：快照不可变 → "无可轮换"而非"轮换无通知"
 - ⬜ A16-8 `llm/adapters-updated` 与 `notifyUpdated` 的"对称 > 复用"文化案例（公共助手被刻意否决）
 - ⬜ A16-9 `STREAM_CLOSED`（干净部分 EOF）不在默认可重试 codes 内——有意策略但文档未说明
+
+> A15 消化时新发现的 10 条（源自 `research/13-schedule-commands.md` §7）：
+
+- ⬜ A15-1 session-reference 的生产消费方不在本 checkout（host/web GUI 侧）
+- ⬜ A15-2 commands 服务的组件装配点与 TypertRemoteService 挂载未深挖
+- ⬜ A15-3 schedule runtime 只挂 root；owned child 含 schedule/change 事件时无显式拒绝路径
+- ⬜ A15-4 时钟回拨/系统休眠无专门补偿逻辑（靠 latest-due 语义兜底，文档未明言）
+- ⬜ A15-5 `recordInput:false` 命令的审计缺口是否被接受未在包文档展开
+- ⬜ A15-6 goal/change 的远程面（host goal 面板）消费方未在范围
+- ⬜ A15-7 every 批量共享 acceptedAt 的竞态（理论不可达，但 faulted 严重性值得留意）
+- ⬜ A15-8 plan/mode 的 pendingIntents 是进程内状态——崩溃即丢选择（与"日志即真相"的张力注释已承认）
+- ⬜ A15-9 ask() 无内置超时：UI 卡死且无人取消则模型回合无限挂起
+- ⬜ A15-10 事件命名无统一前缀约定（schedule/change vs goal/change vs command/run）
