@@ -138,3 +138,10 @@
 - ⬜ A11-2 潜在崩溃路径：`DisposableList` 无 `unshift`——非 global 的 `ctx.on('internal/update', fn, {prepend:true})` 会走 fiber._hooks 的 unshift 而崩溃（utils.ts:5-40）
 - ⬜ A11-3 `fiber._hooks` 在 `_unload` 从不清理：Group 的 update 监听器跨重载存活（推断刻意，未实证）
 - ⬜ A11-4 `whenIdle` 收敛为推演证明，未见穷举并发测试
+
+> A14 消化时新发现的存疑项（源自 `research/12-web-render.md` §8，其中 4 条已具名）：
+
+- ⬜ A14-1 `viewFor` 的完整契约（slot 视图解析的边界语义）
+- ⬜ A14-2 `session.seq` 的分配点（客户端 Session 的序列号在哪里推进）
+- ⬜ A14-3 conversation 折叠引擎与 Host 日志的精确边界（浏览器端 ConversationNodeAssembler 的完整状态机）
+- ⬜ A14-4 HMR rev 流程（rev 哈希如何随 bundle 变化与失效缓存）
