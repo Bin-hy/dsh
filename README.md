@@ -11,7 +11,7 @@
 <a href="https://vitepress.dev"><img alt="VitePress" src="https://img.shields.io/badge/VitePress-1.6-3b56d4?style=for-the-badge"></a>
 <a href="https://github.com/deepseek-ai/DeepSeek-Harness"><img alt="DeepSeek Harness" src="https://img.shields.io/badge/DeepSeek%20Harness-0.1.0--rc.5-4d6bfe?style=for-the-badge"></a>
 
-**在线阅读 → [bin-hy.github.io/dsh](https://bin-hy.github.io/dsh/)**
+**在线阅读 → [deepseek-docs.pages.dev](https://deepseek-docs.pages.dev/)**
 
 </div>
 
@@ -38,37 +38,37 @@
 | 🏗️ **系统化拆解** | 15 篇文章覆盖从插件框架到 Web GUI 的完整架构，不是零散笔记 |
 | ⚖️ **讲权衡，不讲名词** | 每个设计都回答"为什么这样设计 + 放弃了什么"，面试官最想听的正是这个 |
 | 🎯 **面向求职** | 12 个可迁移设计模式（每条带面试话术）+ 28 道高频题 + 扩展实战 |
-| 🎨 **在线可读** | VitePress 站点部署于 GitHub Pages，全文搜索 + 代码高亮 + 目录导航 |
+| 🎨 **在线可读** | VitePress 站点部署于 Cloudflare Pages，全文搜索 + 代码高亮 + 目录导航 |
 
 ## 📖 内容地图
 
 ### 导读（3 篇）
 
-- [为什么研究 DSH](https://bin-hy.github.io/dsh/guide/why-dsh) — 项目定位与学习它的四个理由
-- [核心概念速览](https://bin-hy.github.io/dsh/guide/concepts) — Cordis、事件、seam、scope、turn/step 术语表
-- [架构总览](https://bin-hy.github.io/dsh/guide/architecture) — profile/bundle 组装、40+ 服务地图、轮次流程
+- [为什么研究 DSH](https://deepseek-docs.pages.dev/guide/why-dsh) — 项目定位与学习它的四个理由
+- [核心概念速览](https://deepseek-docs.pages.dev/guide/concepts) — Cordis、事件、seam、scope、turn/step 术语表
+- [架构总览](https://deepseek-docs.pages.dev/guide/architecture) — profile/bundle 组装、40+ 服务地图、轮次流程
 
 ### 深度拆解（8 篇）
 
 | # | 章节 | 核心内容 |
 |---|---|---|
-| 01 | [核心循环：Agent Loop](https://bin-hy.github.io/dsh/deep-dive/agent-loop) | turn/step 状态机、inbox 队列、waterfall 拦截、工具调度 barrier/滚动池 |
-| 02 | [工具系统与执行管道](https://bin-hy.github.io/dsh/deep-dive/tools) | 九段流水线、双轨策略（瀑布+单调守卫）、类型安全 schema DSL |
-| 03 | [沙箱与权限](https://bin-hy.github.io/dsh/deep-dive/sandbox) | Landlock 自限制 launcher、审批升级、权限预设 |
-| 04 | [上下文工程](https://bin-hy.github.io/dsh/deep-dive/context) | prompt 组装、compaction（日志事件即锁）、spill、token 计量、技能系统 |
-| 05 | [多代理编排](https://bin-hy.github.io/dsh/deep-dive/orchestration) | subagent 六种 Provider、受限 JS workflow、jobs、goal 循环 |
-| 06 | [LLM 层与流式管道](https://bin-hy.github.io/dsh/deep-dive/llm) | StreamChunk 协议、BlockAssembler、重试持久化、凭据只存引用 |
-| 07 | [Web GUI 与 API 层](https://bin-hy.github.io/dsh/deep-dive/web) | 插件化浏览器 Cordis、双 WS 流、增量折叠、Typert RPC |
-| 08 | [持久化与工程化](https://bin-hy.github.io/dsh/deep-dive/engineering) | 219 包 monorepo、双 face 构建、vendored 框架修改日志 |
+| 01 | [核心循环：Agent Loop](https://deepseek-docs.pages.dev/deep-dive/agent-loop) | turn/step 状态机、inbox 队列、waterfall 拦截、工具调度 barrier/滚动池 |
+| 02 | [工具系统与执行管道](https://deepseek-docs.pages.dev/deep-dive/tools) | 九段流水线、双轨策略（瀑布+单调守卫）、类型安全 schema DSL |
+| 03 | [沙箱与权限](https://deepseek-docs.pages.dev/deep-dive/sandbox) | Landlock 自限制 launcher、审批升级、权限预设 |
+| 04 | [上下文工程](https://deepseek-docs.pages.dev/deep-dive/context) | prompt 组装、compaction（日志事件即锁）、spill、token 计量、技能系统 |
+| 05 | [多代理编排](https://deepseek-docs.pages.dev/deep-dive/orchestration) | subagent 六种 Provider、受限 JS workflow、jobs、goal 循环 |
+| 06 | [LLM 层与流式管道](https://deepseek-docs.pages.dev/deep-dive/llm) | StreamChunk 协议、BlockAssembler、重试持久化、凭据只存引用 |
+| 07 | [Web GUI 与 API 层](https://deepseek-docs.pages.dev/deep-dive/web) | 插件化浏览器 Cordis、双 WS 流、增量折叠、Typert RPC |
+| 08 | [持久化与工程化](https://deepseek-docs.pages.dev/deep-dive/engineering) | 219 包 monorepo、双 face 构建、vendored 框架修改日志 |
 
 ### 面试冲刺（2 篇）
 
-- [设计模式手册](https://bin-hy.github.io/dsh/interview/patterns) — 12 个可迁移模式：事件溯源日志、能力 seam、失败类型化、有界委托……
-- [高频面试题](https://bin-hy.github.io/dsh/interview/qa) — 概念/源码/系统设计/场景四类共 28 题
+- [设计模式手册](https://deepseek-docs.pages.dev/interview/patterns) — 12 个可迁移模式：事件溯源日志、能力 seam、失败类型化、有界委托……
+- [高频面试题](https://deepseek-docs.pages.dev/interview/qa) — 概念/源码/系统设计/场景四类共 28 题
 
 ### 实战（1 篇）
 
-- [扩展 DSH：加一个工具](https://bin-hy.github.io/dsh/practice/extend) — 五步验证流程 + 技能编写 + 进阶路线图
+- [扩展 DSH：加一个工具](https://deepseek-docs.pages.dev/practice/extend) — 五步验证流程 + 技能编写 + 进阶路线图
 
 ## 🏗️ 架构全景图
 
@@ -116,9 +116,21 @@ flowchart TB
 git clone https://github.com/Bin-hy/dsh.git
 cd dsh
 npm install
-npm run dev        # http://localhost:5173/dsh/
+npm run dev        # http://localhost:5173/
 npm run build      # 输出 docs/.vitepress/dist
 ```
+
+## ☁️ 部署（Cloudflare Pages）
+
+本站在 [Cloudflare Pages](https://pages.cloudflare.com/) 上部署（https://deepseek-docs.pages.dev）：
+
+```text
+构建命令   npm run build
+输出目录   docs/.vitepress/dist
+环境变量   NODE_VERSION: 22
+```
+
+无需任何自定义配置——仓库 push 到 main 后 Pages 自动构建发布。
 
 ## 🗺️ 学习路线建议
 
