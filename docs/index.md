@@ -74,8 +74,10 @@ footer: MIT Licensed · 基于 deepseek-harness 0.1.0-rc.5 源码
 ✅ 11 作用域与事件内核（vendored Cordis waterfall 逐行拆解）
 ✅ 12 终端与 PTY（node-pty / 提示符检测 / 持久会话）
 ✅ 编排补遗 · 压缩与计量补遗 · 启动与沙箱补遗 · 测试与 Typert
-🔬 13 技能深入 / 14 前端渲染内核 / 15 调度命令 / 16 重试凭据（研究中）
-⬜ 其余见 backlog（含 20 条第二轮存疑项）
+✅ 13 技能深入  ✅ 14 前端渲染内核  ✅ 15 调度命令  ✅ 16 重试凭据
+✅ 启动与沙箱补遗 · 测试与 Typert
+—— 12 个主聚类全部消化（共 26 篇）——
+⬜ 第二轮存疑 20 条（A09/A10/A11 消化中新发现，见 backlog）
 ```
 
 完整路线图见 [research/backlog.md](https://github.com/Bin-hy/dsh/blob/main/research/backlog.md)（56 条存疑项 → 12 个文章聚类）。
