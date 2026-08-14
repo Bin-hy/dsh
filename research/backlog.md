@@ -32,7 +32,7 @@
 - `node-pty` spawn 与 UTF-8 传输、前台进程组、TERM→KILL 停稳细节（02#8）
 - `terminal-bash` 的 sandbox 模式 fence 与 `terminal_*` 六工具族
 
-## A13 · 技能系统深入 ⬜
+## A13 · 技能系统深入 ✅（已消化 → deep-dive/skills-deep）
 
 - `skill-badge` 的具体行为（bundled rank 600 徽章提供方）（03#4）
 - 技能目录与 compaction 的精确交互时序（目录被遮蔽后重建）（03#11）
