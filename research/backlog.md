@@ -117,7 +117,7 @@
 - ✅ A09-3 已归档（→ 考古④）：无 `loadStoredFrom` 的后端冷读必须解析全量再切片
 - ✅ A09-4 已归档（→ 考古⑥）：搜索进行中发生写入的对账窗口
 - ✅ A09-5 证伪（→ 考古⑥）：投影缓存 putSoft 与并发恢复的竞态
-- ⬜ A09-6 reserve 相位机覆盖：preparations.ts 状态机的全部转换是否被测试覆盖
+- ✅ A09-6 证伪（→ 考古⑦）：preparations.ts 状态机的全部转换是否被测试覆盖
 - ✅ A09-7 已归档（→ 考古④）：两进程同时写同一 JSONL 会话的行为
 
 > A10 消化时新发现的 9 条（源自 `research/08-outofproc.md` §7）：
@@ -148,9 +148,9 @@
 
 > A13 消化时新发现的 8 条（源自 `research/11-skills.md` §7）：
 
-- ⬜ A13-1 `existing`（批次内目录）命中的具体触发场景未经集成测试验证
+- ✅ A13-1 部分证伪（→ 考古⑦）命中的具体触发场景未经集成测试验证
 - ⬜ A13-2 `workspaceContextMessage` 的 plugin source 保留动机未在注释说明
-- ⬜ A13-3 `TODO(frozen-project-root)`：标记编辑后重算项目根的 scope 键重解释边界
+- ✅ A13-3 已归档（→ 考古⑦）：标记编辑后重算项目根的 scope 键重解释边界
 - ✅ A13-4 已归档（→ 考古⑤） 的产品原因未见文档
 - ⬜ A13-5 pre-step 完整参与者清单（18 个注册文件）跨 bundle 顺序未逐一枚举
 - ⬜ A13-6 time-context `{prepend:true}` 与工作区折叠的最终顺序是推理，未跑组合测试
