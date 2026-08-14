@@ -37,6 +37,7 @@ const deepDive = {
     { text: '考古② · fault 级错误与未文档化选择', link: '/deep-dive/archaeology-2' },
     { text: '考古③ · 三个"没有上界"的审计', link: '/deep-dive/archaeology-3' },
     { text: '考古④ · 类型滞后与单写者假设', link: '/deep-dive/archaeology-4' },
+    { text: '考古⑤ · 证伪、文档化与边界', link: '/deep-dive/archaeology-5' },
   ],
 }
 
