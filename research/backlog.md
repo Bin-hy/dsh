@@ -115,8 +115,8 @@
 - ✅ A09-1 确认为真实缺口（→ 考古③）：高频事件流下 write-behind 的 pending 数组可无限增长
 - ✅ A09-2 证伪（→ 考古⑤）：按 id 的 promise 链在会话退役后是否及时释放
 - ✅ A09-3 已归档（→ 考古④）：无 `loadStoredFrom` 的后端冷读必须解析全量再切片
-- ⬜ A09-4 索引搜索时对账滞后：搜索进行中发生写入的对账窗口
-- ⬜ A09-5 缓存回写无版本仲裁：投影缓存 putSoft 与并发恢复的竞态
+- ✅ A09-4 已归档（→ 考古⑥）：搜索进行中发生写入的对账窗口
+- ✅ A09-5 证伪（→ 考古⑥）：投影缓存 putSoft 与并发恢复的竞态
 - ⬜ A09-6 reserve 相位机覆盖：preparations.ts 状态机的全部转换是否被测试覆盖
 - ✅ A09-7 已归档（→ 考古④）：两进程同时写同一 JSONL 会话的行为
 
@@ -141,7 +141,7 @@
 
 > A14 消化时新发现的存疑项（源自 `research/12-web-render.md` §8，其中 4 条已具名）：
 
-- ⬜ A14-1 `viewFor` 的完整契约（slot 视图解析的边界语义）
+- ✅ A14-1 已找回（→ 考古⑥）（slot 视图解析的边界语义）
 - ⬜ A14-2 `session.seq` 的分配点（客户端 Session 的序列号在哪里推进）
 - ⬜ A14-3 conversation 折叠引擎与 Host 日志的精确边界（浏览器端 ConversationNodeAssembler 的完整状态机）
 - ⬜ A14-4 HMR rev 流程（rev 哈希如何随 bundle 变化与失效缓存）
@@ -160,7 +160,7 @@
 > A16 消化时新发现的 9 条（源自 `research/14-retry-credentials.md` §7）：
 
 - ⬜ A16-1 docs `llmRetryPolicyOf(stream)` 符号已不存在（文档滞后，以代码为准）
-- ⬜ A16-2 `FIXME(call-config-shape)` 两个未决点：epoch 字段清单、provider 特有选项归属
+- ✅ A16-2 已归档（→ 考古⑥）：epoch 字段清单、provider 特有选项归属
 - ✅ A16-3 已实证（→ 考古①）：README "opens a retry turn" vs 实测同一 (turn, step)（retry.spec.ts:216 断言仅 1 条 step/start）
 - ✅ A16-4 已归档（→ 考古⑤）未定义注册顺序行为（README:52 承认；retry.spec.ts:799 展示排水）
 - ⬜ A16-5 invariant 的 async 限制：挂在这类事件上的检查必须同步，异步失败只能被包含
