@@ -135,7 +135,7 @@
 > A11 消化时新发现的 4 条（源自 `research/09-scope-events.md` §7）：
 
 - ⬜ A11-1 `internal/listener` 类型声明落后：声明 `prepend: boolean`，实际分发传 `EventOptions` 对象（events.ts:349 vs :296）
-- ⬜ A11-2 潜在崩溃路径：`DisposableList` 无 `unshift`——非 global 的 `ctx.on('internal/update', fn, {prepend:true})` 会走 fiber._hooks 的 unshift 而崩溃（utils.ts:5-40）
+- ✅ A11-2 已运行时复现（→ 考古① + research/issues/issue-cordis-disposablelist-unshift.md）：`DisposableList` 无 `unshift`——非 global 的 `ctx.on('internal/update', fn, {prepend:true})` 会走 fiber._hooks 的 unshift 而崩溃（utils.ts:5-40）
 - ⬜ A11-3 `fiber._hooks` 在 `_unload` 从不清理：Group 的 update 监听器跨重载存活（推断刻意，未实证）
 - ⬜ A11-4 `whenIdle` 收敛为推演证明，未见穷举并发测试
 
@@ -161,7 +161,7 @@
 
 - ⬜ A16-1 docs `llmRetryPolicyOf(stream)` 符号已不存在（文档滞后，以代码为准）
 - ⬜ A16-2 `FIXME(call-config-shape)` 两个未决点：epoch 字段清单、provider 特有选项归属
-- ⬜ A16-3 文档措辞出入：README "opens a retry turn" vs 实测同一 (turn, step)（retry.spec.ts:216 断言仅 1 条 step/start）
+- ✅ A16-3 已实证（→ 考古①）：README "opens a retry turn" vs 实测同一 (turn, step)（retry.spec.ts:216 断言仅 1 条 step/start）
 - ⬜ A16-4 always 模式的下游组合未定义注册顺序行为（README:52 承认；retry.spec.ts:799 展示排水）
 - ⬜ A16-5 invariant 的 async 限制：挂在这类事件上的检查必须同步，异步失败只能被包含
 - ⬜ A16-6 `BlockAssembler.message()` 默认 source 与 loop 用法需在文档区分
@@ -178,6 +178,6 @@
 - ⬜ A15-5 `recordInput:false` 命令的审计缺口是否被接受未在包文档展开
 - ⬜ A15-6 goal/change 的远程面（host goal 面板）消费方未在范围
 - ⬜ A15-7 every 批量共享 acceptedAt 的竞态（理论不可达，但 faulted 严重性值得留意）
-- ⬜ A15-8 plan/mode 的 pendingIntents 是进程内状态——崩溃即丢选择（与"日志即真相"的张力注释已承认）
+- ✅ A15-8 已归档（→ 考古①）——崩溃即丢选择（与"日志即真相"的张力注释已承认）
 - ⬜ A15-9 ask() 无内置超时：UI 卡死且无人取消则模型回合无限挂起
 - ⬜ A15-10 事件命名无统一前缀约定（schedule/change vs goal/change vs command/run）
