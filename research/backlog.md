@@ -129,14 +129,14 @@
 - ✅ A10-5 证伪（→ 考古⑧） 放行窗口
 - ✅ A10-6 已归档（→ 考古⑧） 故意省略的宿主设置语义
 - ⬜ A10-7 dsh-sdk 子进程的持久化/cordis.yml 与父进程的隔离边界
-- ⬜ A10-8 subprocess seam 的"SDK 托管传输"例外是否还有第二个使用者
+- ✅ A10-8 已归档（→ 考古⑫）是否还有第二个使用者
 - ✅ A10-9 已归档（→ 考古⑪）的配置来源与调优依据
 
 > A11 消化时新发现的 4 条（源自 `research/09-scope-events.md` §7）：
 
 - ✅ A11-1 已审计（→ 考古④）：声明 `prepend: boolean`，实际分发传 `EventOptions` 对象（events.ts:349 vs :296）
 - ✅ A11-2 已运行时复现（→ 考古① + research/issues/issue-cordis-disposablelist-unshift.md）：`DisposableList` 无 `unshift`——非 global 的 `ctx.on('internal/update', fn, {prepend:true})` 会走 fiber._hooks 的 unshift 而崩溃（utils.ts:5-40）
-- ⬜ A11-3 `fiber._hooks` 在 `_unload` 从不清理：Group 的 update 监听器跨重载存活（推断刻意，未实证）
+- ✅ A11-3 已确认（→ 考古⑫）：Group 的 update 监听器跨重载存活（推断刻意，未实证）
 - ⬜ A11-4 `whenIdle` 收敛为推演证明，未见穷举并发测试
 
 > A14 消化时新发现的存疑项（源自 `research/12-web-render.md` §8，其中 4 条已具名）：
@@ -159,12 +159,12 @@
 
 > A16 消化时新发现的 9 条（源自 `research/14-retry-credentials.md` §7）：
 
-- ⬜ A16-1 docs `llmRetryPolicyOf(stream)` 符号已不存在（文档滞后，以代码为准）
+- ✅ A16-1 已处置（→ 考古⑫）已不存在（文档滞后，以代码为准）
 - ✅ A16-2 已归档（→ 考古⑥）：epoch 字段清单、provider 特有选项归属
 - ✅ A16-3 已实证（→ 考古①）：README "opens a retry turn" vs 实测同一 (turn, step)（retry.spec.ts:216 断言仅 1 条 step/start）
 - ✅ A16-4 已归档（→ 考古⑤）未定义注册顺序行为（README:52 承认；retry.spec.ts:799 展示排水）
 - ✅ A16-5 已归档（→ 考古⑩）：挂在这类事件上的检查必须同步，异步失败只能被包含
-- ⬜ A16-6 `BlockAssembler.message()` 默认 source 与 loop 用法需在文档区分
+- ✅ A16-6 已处置（→ 考古⑫） 与 loop 用法需在文档区分
 - ✅ A16-7 已归档（→ 考古⑪）：快照不可变 → "无可轮换"而非"轮换无通知"
 - ✅ A16-8 已归档（→ 考古⑪） 的"对称 > 复用"文化案例（公共助手被刻意否决）
 - ✅ A16-9 已实证（→ 考古②）不在默认可重试 codes 内——有意策略但文档未说明
@@ -173,9 +173,9 @@
 
 - ✅ A15-1 已归档（→ 考古⑤）不在本 checkout（host/web GUI 侧）
 - ⬜ A15-2 commands 服务的组件装配点与 TypertRemoteService 挂载未深挖
-- ⬜ A15-3 schedule runtime 只挂 root；owned child 含 schedule/change 事件时无显式拒绝路径
+- ✅ A15-3 已归档（→ 考古⑫）；owned child 含 schedule/change 事件时无显式拒绝路径
 - ⬜ A15-4 时钟回拨/系统休眠无专门补偿逻辑（靠 latest-due 语义兜底，文档未明言）
-- ⬜ A15-5 `recordInput:false` 命令的审计缺口是否被接受未在包文档展开
+- ✅ A15-5 已归档（→ 考古⑫）是否被接受未在包文档展开
 - ⬜ A15-6 goal/change 的远程面（host goal 面板）消费方未在范围
 - ✅ A15-7 已归档（→ 考古②） 的竞态（理论不可达，但 faulted 严重性值得留意）
 - ✅ A15-8 已归档（→ 考古①）——崩溃即丢选择（与"日志即真相"的张力注释已承认）
