@@ -27,6 +27,7 @@ const deepDive = {
     { text: '09 · 会话持久化内核', link: '/deep-dive/persistence-kernel' },
     { text: '10 · 进程外子代理与 ACP', link: '/deep-dive/out-of-process' },
     { text: '11 · 作用域与事件内核', link: '/deep-dive/scope-events' },
+    { text: '启动与沙箱补遗 · 身份/patch/ACL', link: '/deep-dive/boot-sandbox-supplement' },
   ],
 }
 
